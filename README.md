@@ -47,7 +47,7 @@ D’autres hypothèses spécifiques ont également été prises pour chaque scé
 
 - **Scénario 1** : différents taux de pénétration d’EnR
 - **Scénario 2** : différents taux de pénétration de véhicules électriques (V2G)
-- **Scénario 3** : étude du potentiel du stockage et de la flexibilité
+- **Scénario 3** : scénario 100% EnR et étude des besoins en stockage et de la flexibilité
   
 
 
