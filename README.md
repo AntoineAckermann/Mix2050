@@ -1,13 +1,12 @@
-**Lire Final_report.pdf pour le rapport complet.**
+**Lire Final_report.pdf pour le rapport complet.** 
 
 # Objectif 
 
-Ce projet étudiant (mené à l'ENSE3 en 2021-2022) avait pour but d’étudier les scénarios possibles pour le mix électrique français en 2050. La décarbonation rapide du secteur électrique est primordiale pour diminuer les émissions de CO2 mondiales dans le respect des Accords de Paris. Pour cela, les énergies renouvelables (EnR), et notamment le solaire et l’éolien, sont amenées à jouer un rôle prépondérant. Toutefois, elles sont souvent décriées pour leur intermittence : leur production est fortement dépendante des conditions météorologiques du moment (vitesse du vent et ensoleillement), ce qui peut compliquer la gestion du système électrique basée sur l’équilibre production-consommation à chaque instant. Elles diffèrent en cela des moyens dits “pilotables” (e.g. nucléaire, gaz, charbon et fioul) qui caractérisent les mix électriques classiques. Cette intermittence induit des coûts supplémentaires (par rapport aux moyens de production pilotables) en raison des moyens de flexibilité (stockage, ajustement de la demande, modification des habitudes de consommation, etc.) nécessaires à leur intégration. 
-Tout l’objectif de ce projet est de quantifier cet éventuel surcoût économique des EnR selon divers taux de pénétration (c’est-à-dire la part de la production d’origine renouvelable dans la production d’électricité totale), en s’assurant du respect des objectifs de réductions des émissions de gaz à effet de serre. Nous avons pour cela choisi de modéliser sous Python, les différents scénarios ayant trait au système électrique français en 2050 dans son ensemble en y appliquant différentes contraintes, correspondant aux trois axes d’études qui seront présentés par la suite. Les calculs de mix énergétiques reposent au final sur la formulation et la résolution de problèmes d’optimisation représentant les objectifs et contraintes considérées.
+Ce projet étudiant (mené à Grenoble INP en 2021-2022) avait pour but d’étudier les scénarios possibles pour le mix électrique français en 2050. L'objectif principal de ce projet était de quantifier cet éventuel surcoût économique des EnR selon divers taux de pénétration (c’est-à-dire la part de la production d’origine renouvelable dans la production d’électricité totale), en s’assurant du respect des objectifs de réductions des émissions de gaz à effet de serre. Nous avions pour cela choisi de modéliser sous Python, les différents scénarios ayant trait au système électrique français en 2050 dans son ensemble en y appliquant différentes contraintes, correspondant aux trois axes d’études qui seront présentés par la suite. Les calculs de mix énergétiques reposent au final sur la formulation et la résolution de problèmes d’optimisation représentant les objectifs et contraintes considérées.
 
 # Méthdologie
 
-Tout le travail se base sur les données fournies par RTE. En particulier, un fichier CSV détaille la consommation et la production par technologie pour chaque année, à pas demi-horaire. [2] L’année de référence choisie est 2019, l’année 2020 ayant été fortement marquée par l’épidémie de Covid-19 ne représente pas les tendances à venir. 
+Tout le travail se base sur les données fournies par RTE. En particulier, un fichier CSV détaille la consommation et la production par technologie pour chaque année, à pas demi-horaire. L’année de référence choisie est 2019, l’année 2020 ayant été fortement marquée par l’épidémie de Covid-19 ne représente pas les tendances à venir. 
 
 De ce fichier a notamment été extrait les courbes normalisées (comprises entre 0 et 1) de disponibilité des EnR (solaire et éolien) à des pas demi-horaires, calculées grâce à la formule. L’objectif de cette normalisation et de pouvoir tester facilement différent niveaux de pénétration de solaire ou éolien (i.e. capacités installées).
 
@@ -43,11 +42,7 @@ D’autres hypothèses spécifiques ont également été prises pour chaque scé
 
 ### Scénarios retenus
 
-Étant un groupe de 6, par équipe de deux, nous nous sommes répartis le travail en trois scénarios, détaillés ci-dessous :
-
-- **Scénario 1** : différents taux de pénétration d’EnR
-- **Scénario 2** : différents taux de pénétration de véhicules électriques (V2G)
-- **Scénario 3** : scénario 100% EnR et étude des besoins en stockage et de la flexibilité
+Étant un groupe de 6, par équipe de deux, nous nous sommes répartis le travail en trois scénarios. En ce qui me concernait, le scénario 3 visait à étudier les besoins en stockage et en flexibilité (ainsi que les coûts associés) selon différents taux de pénétration EnR.
   
 
 
